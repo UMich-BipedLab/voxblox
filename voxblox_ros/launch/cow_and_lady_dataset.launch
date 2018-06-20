@@ -1,6 +1,6 @@
 <launch>
   <arg name="play_bag" default="true" />
-  <arg name="bag_file" default="/path/to/your/file"/>
+  <arg name="bag_file" default="/home/ganlu/Downloads/data.bag"/>
   <arg name="voxel_size" default="0.05"/>
 
   <node name="player" pkg="rosbag" type="play" output="screen" args="-r 1.0 -s 0 --clock $(arg bag_file)" if="$(arg play_bag)"/>
